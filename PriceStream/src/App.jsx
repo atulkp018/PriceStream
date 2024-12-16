@@ -1,19 +1,15 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Navbar from "./components/Navbar";
+import InventoryManager from "./components/InventoryManager";
+import DemandVisualization from "./components/DemandVisualization";
+import Notifications from "./components/Notifications";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
+      <h1>PriceStream</h1>
+      <InventoryManager />
+      <DemandVisualization />
+      <Notifications />
     </div>
   );
 }
